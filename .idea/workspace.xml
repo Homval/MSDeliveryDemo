@@ -4,26 +4,12 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="f1386286-41a3-4308-a036-d5228d6e96f3" name="Changes" comment="init commit">
-      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+    <list default="true" id="f1386286-41a3-4308-a036-d5228d6e96f3" name="Changes" comment="add ms-config-properties">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/AuditService/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/AuditService/src/main/resources/application.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/AuthService/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/AuthService/src/main/resources/application.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ConfigService/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/ConfigService/src/main/resources/application.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/MessageService/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/MessageService/src/main/resources/application.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/OrderService/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/OrderService/src/main/resources/application.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/StorageProductService/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/StorageProductService/src/main/resources/application.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/demo/.gitattributes" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/demo/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/demo/.mvn/wrapper/maven-wrapper.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/demo/mvnw" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/demo/mvnw.cmd" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/demo/pom.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/demo/src/main/java/com/example/demo/DemoApplication.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/demo/src/main/resources/application.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/demo/src/test/java/com/example/demo/DemoApplicationTests.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ConfigService/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/ConfigService/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ConfigService/src/main/java/ru/khomyakov/configservice/ConfigServiceApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/ConfigService/src/main/java/ru/khomyakov/configservice/ConfigServiceApplication.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ConfigService/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/ConfigService/src/main/resources/application.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Gateway/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/Gateway/src/main/resources/application.yml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -70,11 +56,14 @@
     "RequestMappingsPanelWidth1": "75",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "Spring Boot.AuditServiceApplication.executor": "Run",
     "Spring Boot.ConfigServiceApplication.executor": "Run",
     "Spring Boot.EurekaServerApplication.executor": "Run",
+    "Spring Boot.GatewayApplication.executor": "Run",
     "git-widget-placeholder": "master",
     "jdk.selected.JAVA_MODULE": "17 (2)",
     "kotlin-language-version-configured": "true",
+    "last_opened_file_path": "C:/Users/in00/IdeaProjects/MSDeliveryDemo/ms-config-properties/UserService",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
@@ -84,6 +73,15 @@
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\in00\IdeaProjects\MSDeliveryDemo\ms-config-properties\UserService" />
+      <recent name="C:\Users\in00\IdeaProjects\MSDeliveryDemo\ms-config-properties\StorageProductService" />
+      <recent name="C:\Users\in00\IdeaProjects\MSDeliveryDemo\ms-config-properties\OrderService" />
+      <recent name="C:\Users\in00\IdeaProjects\MSDeliveryDemo\ms-config-properties\MessageService" />
+      <recent name="C:\Users\in00\IdeaProjects\MSDeliveryDemo\ms-config-properties\AuthService\prod" />
+    </key>
+  </component>
   <component name="RunDashboard">
     <option name="configurationTypes">
       <set>
@@ -181,7 +179,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1737985455023</updated>
-      <workItem from="1737985456095" duration="3526000" />
+      <workItem from="1737985456095" duration="6794000" />
     </task>
     <task id="LOCAL-00001" summary="init commit">
       <option name="closed" value="true" />
@@ -191,7 +189,31 @@
       <option name="project" value="LOCAL" />
       <updated>1737987807269</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="connected eureka server and clients">
+      <option name="closed" value="true" />
+      <created>1737989800966</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1737989800966</updated>
+    </task>
+    <task id="LOCAL-00003" summary="add gateway and user-service">
+      <option name="closed" value="true" />
+      <created>1737990437652</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1737990437652</updated>
+    </task>
+    <task id="LOCAL-00004" summary="add ms-config-properties">
+      <option name="closed" value="true" />
+      <created>1737991426568</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1737991426568</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -199,6 +221,9 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="init commit" />
-    <option name="LAST_COMMIT_MESSAGE" value="init commit" />
+    <MESSAGE value="connected eureka server and clients" />
+    <MESSAGE value="add gateway and user-service" />
+    <MESSAGE value="add ms-config-properties" />
+    <option name="LAST_COMMIT_MESSAGE" value="add ms-config-properties" />
   </component>
 </project>

@@ -4,17 +4,6 @@ server:
 spring:
   application:
     name: Gateway
-  profiles:
-    active: dev
-  cloud:
-    config:
-      discovery:
-        enabled: true
-      server:
-        git:
-          uri: https://github.com/Homval/MSDeliveryDemo
-          searchPaths: "/ms-configs-properties/{application}/{profile}"
-          default-label: main
 
 eureka:
   client:
