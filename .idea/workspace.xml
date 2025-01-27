@@ -4,17 +4,26 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="f1386286-41a3-4308-a036-d5228d6e96f3" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/codeStyles/Project.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/codeStyles/codeStyleConfig.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/jarRepositories.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/MSDeliveryDemo.iml" afterDir="false" />
+    <list default="true" id="f1386286-41a3-4308-a036-d5228d6e96f3" name="Changes" comment="init commit">
+      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/AuditService/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/AuditService/src/main/resources/application.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/AuthService/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/AuthService/src/main/resources/application.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ConfigService/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/ConfigService/src/main/resources/application.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MessageService/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/MessageService/src/main/resources/application.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/OrderService/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/OrderService/src/main/resources/application.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/StorageProductService/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/StorageProductService/src/main/resources/application.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/demo/.gitattributes" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/demo/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/demo/.mvn/wrapper/maven-wrapper.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/demo/mvnw" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/demo/mvnw.cmd" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/demo/pom.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/demo/src/main/java/com/example/demo/DemoApplication.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/demo/src/main/resources/application.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/demo/src/test/java/com/example/demo/DemoApplicationTests.java" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -24,6 +33,18 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
+  <component name="GitHubPullRequestSearchHistory"><![CDATA[{
+  "lastFilter": {
+    "state": "OPEN",
+    "assignee": "Homval"
+  }
+}]]></component>
+  <component name="GithubPullRequestsUISettings"><![CDATA[{
+  "selectedUrlAndAccountId": {
+    "url": "https://github.com/Homval/MSDeliveryDemo.git",
+    "accountId": "6e11839e-30f9-40a9-b67f-d77850142cf7"
+  }
+}]]></component>
   <component name="KubernetesApiPersistence"><![CDATA[{}]]></component>
   <component name="KubernetesApiProvider"><![CDATA[{
   "isMigrated": true
@@ -43,8 +64,14 @@
   </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
+    "RequestMappingsPanelOrder0": "0",
+    "RequestMappingsPanelOrder1": "1",
+    "RequestMappingsPanelWidth0": "75",
+    "RequestMappingsPanelWidth1": "75",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "Spring Boot.ConfigServiceApplication.executor": "Run",
+    "Spring Boot.EurekaServerApplication.executor": "Run",
     "git-widget-placeholder": "master",
     "jdk.selected.JAVA_MODULE": "17 (2)",
     "kotlin-language-version-configured": "true",
@@ -84,9 +111,9 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="DemoApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
-      <module name="demo" />
-      <option name="SPRING_BOOT_MAIN_CLASS" value="com.example.demo.DemoApplication" />
+    <configuration name="ConfigServiceApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
+      <module name="ConfigService" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="ru.khomyakov.configservice.ConfigServiceApplication" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -94,6 +121,13 @@
     <configuration name="EurekaServerApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
       <module name="EurekaServer" />
       <option name="SPRING_BOOT_MAIN_CLASS" value="ru.khomyakov.eurekaserver.EurekaServerApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="GatewayApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
+      <module name="Gateway" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="ru.khomyakov.gateway.GatewayApplication" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -122,6 +156,14 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="UserServiceApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
+      <option name="FRAME_DEACTIVATION_UPDATE_POLICY" value="UpdateClassesAndResources" />
+      <module name="UserService" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="ru.khomyakov.userservice.UserServiceApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
   </component>
   <component name="SharedIndexes">
     <attachedChunks>
@@ -139,11 +181,24 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1737985455023</updated>
-      <workItem from="1737985456095" duration="790000" />
+      <workItem from="1737985456095" duration="3526000" />
     </task>
+    <task id="LOCAL-00001" summary="init commit">
+      <option name="closed" value="true" />
+      <created>1737987807269</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1737987807269</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="init commit" />
+    <option name="LAST_COMMIT_MESSAGE" value="init commit" />
   </component>
 </project>
