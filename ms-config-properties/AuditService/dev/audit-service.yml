@@ -1,2 +1,8 @@
-application:
-  name: AuditService
+spring:
+  application:
+    name: AuditService
+  datasource:
+    url: jdbc:postgresql://localhost:5432/audit-service
+    username: postgres
+    password: postgres
+
