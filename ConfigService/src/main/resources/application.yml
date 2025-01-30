@@ -12,8 +12,8 @@ spring:
         enabled: true
       server:
         git:
-          uri: https://github.com/Homval/MSDeliveryDemo
-          searchPaths: "/ms-configs-properties/{application}/{profile}"
+          uri: https://github.com/Homval/MSDeliveryDemo/ms-configs-properties/{application}/{profile}
+#          searchPaths: "/ms-configs-properties/{application}/{profile}"
 #          default-label: main
 #          username:
 #          password:

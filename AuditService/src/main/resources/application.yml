@@ -8,6 +8,10 @@ spring:
     active: dev
   config:
     import: "optional:configserver:"
+#  datasource:
+#    url: jdbc:postgresql://localhost:5432/audit-service
+#    username: postgres
+#    password: postgres
 
 eureka:
   client:

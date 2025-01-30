@@ -1,6 +1,6 @@
 spring:
   application:
-    name: AuditService
+    name: audit-service
   datasource:
     url: jdbc:postgresql://localhost:5432/audit-service
     username: postgres
