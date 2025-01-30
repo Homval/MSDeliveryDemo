@@ -3,7 +3,7 @@ server:
 
 spring:
   application:
-    name: ConfigService
+    name: config-service
   profiles:
     active: dev
   cloud:
@@ -14,7 +14,10 @@ spring:
         git:
           uri: https://github.com/Homval/MSDeliveryDemo
           searchPaths: "/ms-configs-properties/{application}/{profile}"
-          default-label: main
+#          default-label: main
+#          username:
+#          password:
+
 
 eureka:
   client:

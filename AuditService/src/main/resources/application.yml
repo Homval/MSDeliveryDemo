@@ -3,7 +3,9 @@ server:
 
 spring:
   application:
-    name: AuditService
+    name: audit-service
+  profiles:
+    active: dev
   config:
     import: "optional:configserver:"
 
