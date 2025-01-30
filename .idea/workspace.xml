@@ -4,11 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="f1386286-41a3-4308-a036-d5228d6e96f3" name="Changes" comment="change app name">
+    <list default="true" id="f1386286-41a3-4308-a036-d5228d6e96f3" name="Changes" comment="change app name2">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/AuditService/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/AuditService/src/main/resources/application.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ConfigService/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/ConfigService/src/main/resources/application.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ms-config-properties/audit-service/dev/audit-service.yml" beforeDir="false" afterPath="$PROJECT_DIR$/ms-config-properties/audit-service/dev/audit-service.yml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -187,7 +184,7 @@
       <workItem from="1737985456095" duration="6794000" />
       <workItem from="1737992291324" duration="88000" />
       <workItem from="1738077367680" duration="5198000" />
-      <workItem from="1738214557250" duration="3271000" />
+      <workItem from="1738214557250" duration="5217000" />
     </task>
     <task id="LOCAL-00001" summary="init commit">
       <option name="closed" value="true" />
@@ -245,7 +242,15 @@
       <option name="project" value="LOCAL" />
       <updated>1738216106282</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="change app name2">
+      <option name="closed" value="true" />
+      <created>1738218067542</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1738218067542</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -259,6 +264,7 @@
     <MESSAGE value="connect ConfigService" />
     <MESSAGE value="add properties for AuditService" />
     <MESSAGE value="change app name" />
-    <option name="LAST_COMMIT_MESSAGE" value="change app name" />
+    <MESSAGE value="change app name2" />
+    <option name="LAST_COMMIT_MESSAGE" value="change app name2" />
   </component>
 </project>
