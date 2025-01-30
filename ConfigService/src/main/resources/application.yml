@@ -12,12 +12,10 @@ spring:
         enabled: true
       server:
         git:
-          uri: https://github.com/Homval/MSDeliveryDemo/ms-configs-properties/{application}/{profile}
-#          searchPaths: "/ms-configs-properties/{application}/{profile}"
-#          default-label: main
-#          username:
-#          password:
-
+          uri: https://github.com/Homval/MSDeliveryDemo.git
+          searchPaths: "/ms-configs-properties/{application}/{profile}"
+          default-label: origin/master
+          clone-on-start: true
 
 eureka:
   client:

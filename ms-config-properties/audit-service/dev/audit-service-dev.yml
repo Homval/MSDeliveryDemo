@@ -1,11 +1,10 @@
 spring:
-  application:
-    name: audit-service
   datasource:
+    driver-class-name: org.postgresql.Driver
     url: jdbc:postgresql://localhost:5432/audit-service
     username: postgres
     password: postgres
-    driver-class-name: org.postgresql.Driver
+
   jpa:
     hibernate:
       ddl-auto: none
