@@ -12,9 +12,9 @@ spring:
         enabled: true
       server:
         git:
-          uri: https://github.com/Homval/MSDeliveryDemo.git
-          searchPaths: "/ms-configs-properties/{application}/{profile}"
-          default-label: origin/master
+          uri: https://github.com/Homval/ConfigRepository.git
+          searchPaths: "/ms-config-files/{application}/{profile}"
+          default-label: main
           clone-on-start: true
 
 eureka:
