@@ -4,14 +4,24 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="f1386286-41a3-4308-a036-d5228d6e96f3" name="Changes" comment="change configs2">
+    <list default="true" id="f1386286-41a3-4308-a036-d5228d6e96f3" name="Changes" comment="add config repo&#10;fix ConfigService application.yml">
+      <change afterPath="$PROJECT_DIR$/Gateway/src/main/java/ru/khomyakov/gateway/configs/Filter.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Gateway/src/main/java/ru/khomyakov/gateway/configs/RouteConfig.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ConfigService/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/ConfigService/src/main/resources/application.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Gateway/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/Gateway/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Gateway/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/Gateway/src/main/resources/application.yml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -187,7 +197,7 @@
       <workItem from="1738077367680" duration="5198000" />
       <workItem from="1738214557250" duration="9448000" />
       <workItem from="1738224242103" duration="3456000" />
-      <workItem from="1738423606531" duration="318000" />
+      <workItem from="1738423606531" duration="4514000" />
     </task>
     <task id="LOCAL-00001" summary="init commit">
       <option name="closed" value="true" />
@@ -269,7 +279,15 @@
       <option name="project" value="LOCAL" />
       <updated>1738227290856</updated>
     </task>
-    <option name="localTasksCounter" value="11" />
+    <task id="LOCAL-00011" summary="add config repo&#10;fix ConfigService application.yml">
+      <option name="closed" value="true" />
+      <created>1738424407559</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1738424407559</updated>
+    </task>
+    <option name="localTasksCounter" value="12" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -297,6 +315,7 @@
     <MESSAGE value="change app name2" />
     <MESSAGE value="change configs" />
     <MESSAGE value="change configs2" />
-    <option name="LAST_COMMIT_MESSAGE" value="change configs2" />
+    <MESSAGE value="add config repo&#10;fix ConfigService application.yml" />
+    <option name="LAST_COMMIT_MESSAGE" value="add config repo&#10;fix ConfigService application.yml" />
   </component>
 </project>

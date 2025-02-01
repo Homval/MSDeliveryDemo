@@ -1,12 +1,17 @@
 server:
-  port: 8082
+  port: 8765
 
 spring:
   application:
-    name: Gateway
+    name: gateway-service
 
 eureka:
   client:
     service-url:
       defaultZone: ${EUREKA_URL:http://localhost:8762/eureka}
+    enabled: true
+    eureka-service-url-poll-interval-seconds: 30
+  instance:
+    preferIpAddress: true
+    lease-renewal-interval-in-seconds: 30
 
