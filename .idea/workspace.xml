@@ -4,12 +4,13 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="f1386286-41a3-4308-a036-d5228d6e96f3" name="Changes" comment="add config repo&#10;fix ConfigService application.yml">
-      <change afterPath="$PROJECT_DIR$/Gateway/src/main/java/ru/khomyakov/gateway/configs/Filter.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Gateway/src/main/java/ru/khomyakov/gateway/configs/RouteConfig.java" afterDir="false" />
+    <list default="true" id="f1386286-41a3-4308-a036-d5228d6e96f3" name="Changes" comment="add gateway">
+      <change afterPath="$PROJECT_DIR$/AuthService/src/main/resources/db/changelog/changelog-master.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/AuthService/src/main/resources/db/changelog/version_1_0_0/changelog.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Gateway/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/Gateway/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Gateway/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/Gateway/src/main/resources/application.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/AuthService/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/AuthService/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/AuthService/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/AuthService/src/main/resources/application.yml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -20,6 +21,7 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="Class" />
+        <option value="Liquibase Changelog" />
       </list>
     </option>
   </component>
@@ -197,7 +199,10 @@
       <workItem from="1738077367680" duration="5198000" />
       <workItem from="1738214557250" duration="9448000" />
       <workItem from="1738224242103" duration="3456000" />
-      <workItem from="1738423606531" duration="4514000" />
+      <workItem from="1738423606531" duration="7892000" />
+      <workItem from="1738479497734" duration="4000" />
+      <workItem from="1738508609318" duration="8000" />
+      <workItem from="1738594417073" duration="2905000" />
     </task>
     <task id="LOCAL-00001" summary="init commit">
       <option name="closed" value="true" />
@@ -287,7 +292,15 @@
       <option name="project" value="LOCAL" />
       <updated>1738424407559</updated>
     </task>
-    <option name="localTasksCounter" value="12" />
+    <task id="LOCAL-00012" summary="add gateway">
+      <option name="closed" value="true" />
+      <created>1738429082620</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1738429082620</updated>
+    </task>
+    <option name="localTasksCounter" value="13" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -316,6 +329,7 @@
     <MESSAGE value="change configs" />
     <MESSAGE value="change configs2" />
     <MESSAGE value="add config repo&#10;fix ConfigService application.yml" />
-    <option name="LAST_COMMIT_MESSAGE" value="add config repo&#10;fix ConfigService application.yml" />
+    <MESSAGE value="add gateway" />
+    <option name="LAST_COMMIT_MESSAGE" value="add gateway" />
   </component>
 </project>

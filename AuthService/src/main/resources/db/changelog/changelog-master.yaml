@@ -1,0 +1,9 @@
+databaseChangeLog:
+  - preConditions:
+      - runningAs:
+          username: postgres
+          password: postgres
+
+  - include:
+      file: /version_1_0_0/changelog.yaml
+      relativeToChangelogFile: true

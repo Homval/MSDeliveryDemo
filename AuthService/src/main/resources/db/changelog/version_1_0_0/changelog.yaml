@@ -1,0 +1,6 @@
+databaseChangeLog:
+  - changeSet:
+      id: tag-version_1_0_0
+      author: homval
+      labels: version_1_0_0
+

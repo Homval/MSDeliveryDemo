@@ -3,9 +3,19 @@ server:
 
 spring:
   application:
-    name: AuthService
+    name: auth-service
+  profiles:
+    active: dev
+  config:
+    import: "configserver:"
+  cloud:
+    config:
+      fail-fast: true
+
 
 eureka:
   client:
     service-url:
       defaultZone: ${EUREKA_URL:http://localhost:8762/eureka}
+
+
