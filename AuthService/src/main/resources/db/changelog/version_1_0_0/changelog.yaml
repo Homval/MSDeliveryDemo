@@ -4,3 +4,6 @@ databaseChangeLog:
       author: homval
       labels: version_1_0_0
 
+  - include:
+      file: create-table.yaml
+      relativeToChangelogFile: true

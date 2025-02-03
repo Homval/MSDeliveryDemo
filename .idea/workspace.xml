@@ -4,13 +4,13 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="f1386286-41a3-4308-a036-d5228d6e96f3" name="Changes" comment="add gateway">
-      <change afterPath="$PROJECT_DIR$/AuthService/src/main/resources/db/changelog/changelog-master.yaml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/AuthService/src/main/resources/db/changelog/version_1_0_0/changelog.yaml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+    <list default="true" id="f1386286-41a3-4308-a036-d5228d6e96f3" name="Changes" comment="add auth-service&#10;add liquibase to auth-service&#10;add auth-service configs to config repo">
+      <change afterPath="$PROJECT_DIR$/AuthService/src/main/java/ru/khomyakov/authservice/models/entities/Role.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/AuthService/src/main/java/ru/khomyakov/authservice/models/entities/User.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/AuthService/src/main/java/ru/khomyakov/authservice/models/enums/RoleEnum.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/AuthService/src/main/resources/db/changelog/version_1_0_0/create-table.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/AuthService/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/AuthService/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/AuthService/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/AuthService/src/main/resources/application.yml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -20,8 +20,9 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Class" />
         <option value="Liquibase Changelog" />
+        <option value="Enum" />
+        <option value="Class" />
       </list>
     </option>
   </component>
@@ -89,6 +90,10 @@
   }
 }</component>
   <component name="RecentsManager">
+    <key name="CreateClassDialog.RecentsKey">
+      <recent name="ru.khomyakov.authservice.models.entities" />
+      <recent name="ru.khomyakov.authservice.models.enums" />
+    </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\Users\in00\IdeaProjects\MSDeliveryDemo\ms-config-properties\UserService" />
       <recent name="C:\Users\in00\IdeaProjects\MSDeliveryDemo\ms-config-properties\StorageProductService" />
@@ -202,7 +207,7 @@
       <workItem from="1738423606531" duration="7892000" />
       <workItem from="1738479497734" duration="4000" />
       <workItem from="1738508609318" duration="8000" />
-      <workItem from="1738594417073" duration="2905000" />
+      <workItem from="1738594417073" duration="5257000" />
     </task>
     <task id="LOCAL-00001" summary="init commit">
       <option name="closed" value="true" />
@@ -300,7 +305,15 @@
       <option name="project" value="LOCAL" />
       <updated>1738429082620</updated>
     </task>
-    <option name="localTasksCounter" value="13" />
+    <task id="LOCAL-00013" summary="add auth-service&#10;add liquibase to auth-service&#10;add auth-service configs to config repo">
+      <option name="closed" value="true" />
+      <created>1738597476828</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1738597476828</updated>
+    </task>
+    <option name="localTasksCounter" value="14" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -330,6 +343,7 @@
     <MESSAGE value="change configs2" />
     <MESSAGE value="add config repo&#10;fix ConfigService application.yml" />
     <MESSAGE value="add gateway" />
-    <option name="LAST_COMMIT_MESSAGE" value="add gateway" />
+    <MESSAGE value="add auth-service&#10;add liquibase to auth-service&#10;add auth-service configs to config repo" />
+    <option name="LAST_COMMIT_MESSAGE" value="add auth-service&#10;add liquibase to auth-service&#10;add auth-service configs to config repo" />
   </component>
 </project>
