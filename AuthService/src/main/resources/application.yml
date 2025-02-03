@@ -18,4 +18,11 @@ eureka:
     service-url:
       defaultZone: ${EUREKA_URL:http://localhost:8762/eureka}
 
+jwt:
+  access:
+    secret: ${JWT_ACCESS_SECRET:3j6TZzKfFjZGBqBqrbLB6FUpaj7OEfCsSydwiTgf2eDx1bd9dWOBbZTDvdDBrfY}
+    expiration: ${JWT_ACCESS_EXPIRATION:300}
+  refresh:
+    secret: ${JWT_REFRESH_SECRET:chCGDeS4wSzG64uTKwlBlTvvbvkmj09Mr14emIg6XvTeqaZiT1laXPXkFj4yVYO}
+    expiration: ${JWT_REFRESH_EXPIRATION:3600}
 
