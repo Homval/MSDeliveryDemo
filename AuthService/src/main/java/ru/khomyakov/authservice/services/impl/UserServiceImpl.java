@@ -11,6 +11,8 @@ import ru.khomyakov.authservice.models.entities.User;
 import ru.khomyakov.authservice.repositories.UserRepository;
 import ru.khomyakov.authservice.services.UserService;
 
+import java.util.UUID;
+
 @Slf4j
 @Service
 @AllArgsConstructor
@@ -23,6 +25,11 @@ public class UserServiceImpl implements UserService {
         User user = userRepository.findUserByEmailAndIsEnabled(loginRequest.email(), true);
         validate(user, loginRequest);
         return user;
+    }
+
+    @Override
+    public User getById(UUID userId) {
+        return userRepository.findUserById(userId);
     }
 
     private void validate(User user, @NotBlank LoginRequest loginRequest) {

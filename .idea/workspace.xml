@@ -4,20 +4,20 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="f1386286-41a3-4308-a036-d5228d6e96f3" name="Changes" comment="add repositories&#10;add ObjectMapperConfig and PasswordEncoderConfig">
-      <change afterPath="$PROJECT_DIR$/AuthService/src/main/java/ru/khomyakov/authservice/controllers/AuthController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/AuthService/src/main/java/ru/khomyakov/authservice/exceptions/AuthorizationException.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/AuthService/src/main/java/ru/khomyakov/authservice/jwtUtils/JwtProvider.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/AuthService/src/main/java/ru/khomyakov/authservice/models/dto/JwtAuthenticationDto.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/AuthService/src/main/java/ru/khomyakov/authservice/models/dto/JwtResponse.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/AuthService/src/main/java/ru/khomyakov/authservice/models/dto/LoginRequest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/AuthService/src/main/java/ru/khomyakov/authservice/services/AuthService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/AuthService/src/main/java/ru/khomyakov/authservice/services/UserService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/AuthService/src/main/java/ru/khomyakov/authservice/services/impl/AuthServiceImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/AuthService/src/main/java/ru/khomyakov/authservice/services/impl/UserServiceImpl.java" afterDir="false" />
+    <list default="true" id="f1386286-41a3-4308-a036-d5228d6e96f3" name="Changes" comment="create JwtProvider&#10;create AuthController">
+      <change afterPath="$PROJECT_DIR$/AuthService/src/main/java/ru/khomyakov/authservice/configs/RedisConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/AuthService/src/main/java/ru/khomyakov/authservice/models/dto/RefreshRequest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/AuthService/src/main/java/ru/khomyakov/authservice/services/TokenService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/AuthService/src/main/java/ru/khomyakov/authservice/services/impl/TokenServiceImpl.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/AuthService/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/AuthService/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/AuthService/src/main/java/ru/khomyakov/authservice/controllers/AuthController.java" beforeDir="false" afterPath="$PROJECT_DIR$/AuthService/src/main/java/ru/khomyakov/authservice/controllers/AuthController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/AuthService/src/main/java/ru/khomyakov/authservice/jwtUtils/JwtProvider.java" beforeDir="false" afterPath="$PROJECT_DIR$/AuthService/src/main/java/ru/khomyakov/authservice/jwtUtils/JwtProvider.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/AuthService/src/main/java/ru/khomyakov/authservice/repositories/UserRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/AuthService/src/main/java/ru/khomyakov/authservice/repositories/UserRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/AuthService/src/main/java/ru/khomyakov/authservice/services/AuthService.java" beforeDir="false" afterPath="$PROJECT_DIR$/AuthService/src/main/java/ru/khomyakov/authservice/services/AuthService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/AuthService/src/main/java/ru/khomyakov/authservice/services/UserService.java" beforeDir="false" afterPath="$PROJECT_DIR$/AuthService/src/main/java/ru/khomyakov/authservice/services/UserService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/AuthService/src/main/java/ru/khomyakov/authservice/services/impl/AuthServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/AuthService/src/main/java/ru/khomyakov/authservice/services/impl/AuthServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/AuthService/src/main/java/ru/khomyakov/authservice/services/impl/UserServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/AuthService/src/main/java/ru/khomyakov/authservice/services/impl/UserServiceImpl.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/AuthService/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/AuthService/src/main/resources/application.yml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -30,8 +30,8 @@
       <list>
         <option value="Liquibase Changelog" />
         <option value="Enum" />
-        <option value="Record" />
         <option value="Interface" />
+        <option value="Record" />
         <option value="Class" />
       </list>
     </option>
@@ -82,6 +82,7 @@
     &quot;Spring Boot.EurekaServerApplication.executor&quot;: &quot;Run&quot;,
     &quot;Spring Boot.GatewayApplication.executor&quot;: &quot;Run&quot;,
     &quot;git-widget-placeholder&quot;: &quot;master&quot;,
+    &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;,
     &quot;jdk.selected.JAVA_MODULE&quot;: &quot;17 (2)&quot;,
     &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
     &quot;last_opened_file_path&quot;: &quot;C:/Users/in00/IdeaProjects/MSDeliveryDemo/ms-config-properties/UserService&quot;,
@@ -91,6 +92,7 @@
     &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
     &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
     &quot;run.configurations.included.in.services&quot;: &quot;true&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;configurable.group.appearance&quot;,
     &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   },
   &quot;keyToStringList&quot;: {
@@ -101,11 +103,11 @@
 }</component>
   <component name="RecentsManager">
     <key name="CreateClassDialog.RecentsKey">
+      <recent name="ru.khomyakov.authservice.models.dto" />
       <recent name="ru.khomyakov.authservice.jwtUtils" />
       <recent name="ru.khomyakov.authservice.services.impl" />
       <recent name="ru.khomyakov.authservice.exceptions" />
       <recent name="ru.khomyakov.authservice.services" />
-      <recent name="ru.khomyakov.authservice.models.dto" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\Users\in00\IdeaProjects\MSDeliveryDemo\ms-config-properties\UserService" />
@@ -220,7 +222,9 @@
       <workItem from="1738423606531" duration="7892000" />
       <workItem from="1738479497734" duration="4000" />
       <workItem from="1738508609318" duration="8000" />
-      <workItem from="1738594417073" duration="12193000" />
+      <workItem from="1738594417073" duration="13223000" />
+      <workItem from="1738682310402" duration="881000" />
+      <workItem from="1738945189562" duration="5763000" />
     </task>
     <task id="LOCAL-00001" summary="init commit">
       <option name="closed" value="true" />
@@ -342,7 +346,15 @@
       <option name="project" value="LOCAL" />
       <updated>1738602103733</updated>
     </task>
-    <option name="localTasksCounter" value="16" />
+    <task id="LOCAL-00016" summary="create JwtProvider&#10;create AuthController">
+      <option name="closed" value="true" />
+      <created>1738607022820</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1738607022820</updated>
+    </task>
+    <option name="localTasksCounter" value="17" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -375,6 +387,11 @@
     <MESSAGE value="add auth-service&#10;add liquibase to auth-service&#10;add auth-service configs to config repo" />
     <MESSAGE value="add user, role classes, role enum&#10;create db tables" />
     <MESSAGE value="add repositories&#10;add ObjectMapperConfig and PasswordEncoderConfig" />
-    <option name="LAST_COMMIT_MESSAGE" value="add repositories&#10;add ObjectMapperConfig and PasswordEncoderConfig" />
+    <MESSAGE value="create JwtProvider&#10;create AuthController" />
+    <option name="LAST_COMMIT_MESSAGE" value="create JwtProvider&#10;create AuthController" />
+  </component>
+  <component name="XSLT-Support.FileAssociations.UIState">
+    <expand />
+    <select />
   </component>
 </project>
