@@ -3,6 +3,8 @@ package ru.khomyakov.authservice.jwtUtils;
 import com.fasterxml.jackson.core.JsonProcessingException;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import io.jsonwebtoken.Jwts;
+import io.jsonwebtoken.io.Decoders;
+import io.jsonwebtoken.security.Keys;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.stereotype.Component;
@@ -26,14 +28,14 @@ public class JwtProvider {
     private final long jwtRefreshExpirationTime;
     private final ObjectMapper objectMapper;
 
-    public JwtProvider(@Value("${jwt.access.secret}") SecretKey jwtAccessSecretKey,
-                       @Value("${jwt.refresh.secret}") SecretKey jwtRefreshSecretKey,
+    public JwtProvider(@Value("${jwt.access.secret}") String jwtAccessSecretKey,
+                       @Value("${jwt.refresh.secret}") String jwtRefreshSecretKey,
                        @Value("${jwt.access.expiration}") long jwtAccessExpirationTime,
                        @Value("${jwt.refresh.expiration}") long jwtRefreshExpirationTime,
                        ObjectMapper objectMapper,
                        TokenService tokenService) {
-        this.jwtAccessSecretKey = jwtAccessSecretKey;
-        this.jwtRefreshSecretKey = jwtRefreshSecretKey;
+        this.jwtAccessSecretKey = Keys.hmacShaKeyFor(Decoders.BASE64.decode(jwtAccessSecretKey));
+        this.jwtRefreshSecretKey = Keys.hmacShaKeyFor(Decoders.BASE64.decode(jwtRefreshSecretKey));
         this.jwtAccessExpirationTime = jwtAccessExpirationTime;
         this.jwtRefreshExpirationTime = jwtRefreshExpirationTime;
         this.objectMapper = objectMapper;
