@@ -37,4 +37,10 @@ public class AuthController {
                        @RequestBody @NotNull RefreshRequest refreshRequest) {
         authService.logout(accessToken, refreshRequest.refreshToken());
     }
+
+    @Operation(summary = "registration endpoint")
+    @PostMapping("/register")
+    public void register(@RequestBody @NotNull String email) {
+        authService.register(email);
+    }
 }

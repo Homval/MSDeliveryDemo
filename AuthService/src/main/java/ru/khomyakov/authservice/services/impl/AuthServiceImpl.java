@@ -59,4 +59,10 @@ public class AuthServiceImpl implements AuthService {
         tokenService.blockAccessToken(accessToken);
         log.info("User {} logged out", accessToken);
     }
+
+    @Override
+    public void register(String email) {
+        userService.validateNewUserEmail(email);
+        userService.createNewUser(email);
+    }
 }

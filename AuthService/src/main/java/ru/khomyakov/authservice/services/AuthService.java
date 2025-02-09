@@ -8,4 +8,5 @@ public interface AuthService {
     JwtResponse login(LoginRequest loginRequest);
     JwtResponse refresh(String refreshToken);
     void logout(@NotNull String accessToken, String refreshToken);
+    void register(@NotNull String email);
 }

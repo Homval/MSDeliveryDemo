@@ -8,4 +8,6 @@ import java.util.UUID;
 public interface UserService {
     User loadUserByLoginRequest(LoginRequest loginRequest);
     User getById(UUID userId);
+    User createNewUser(String email);
+    void validateNewUserEmail(String email);
 }
