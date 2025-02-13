@@ -10,4 +10,5 @@ public interface UserService {
     User getById(UUID userId);
     User createNewUser(String email);
     void validateNewUserEmail(String email);
+    User findUserByEmail(String email);
 }

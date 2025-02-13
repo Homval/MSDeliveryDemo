@@ -26,12 +26,19 @@ jwt:
     secret: ${JWT_REFRESH_SECRET:chCGDeS4wSzG64uTKwlBlTvvbvkmj09Mr14emIg6XvTeqaZiT1laXPXkFj4yVYO}
     expiration: ${JWT_REFRESH_EXPIRATION:3600}
 
+invite:
+  token:
+    expiration: 300
+  invite:
+    expiration: 24
+
 redis:
   host: localhost
   port: 6379
   password: redis
   cache:
     prefix:
+      response-status: response-status/
       block-refresh-token: refresh-token-block/
       block-access-token: access-token-block/
     users-cache-expiration: 600

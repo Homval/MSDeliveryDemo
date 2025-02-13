@@ -64,6 +64,15 @@ public class UserServiceImpl implements UserService {
         }
     }
 
+    @Override
+    public User findUserByEmail(String email) {
+        User user = userRepository.findUserByEmailAndIsEnabled(email, true);
+        if (user == null) {
+            throw new AuthorizationException(String.format("Account with email %s not found", email));
+        }
+        return user;
+    }
+
     private void validate(User user, @NotBlank LoginRequest loginRequest) {
         if (user == null) {
             log.error("Account with login {} not found", loginRequest.email());

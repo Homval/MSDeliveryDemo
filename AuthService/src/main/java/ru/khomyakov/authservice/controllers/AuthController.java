@@ -9,6 +9,7 @@ import org.springframework.web.bind.annotation.*;
 import ru.khomyakov.authservice.models.dto.JwtResponse;
 import ru.khomyakov.authservice.models.dto.LoginRequest;
 import ru.khomyakov.authservice.models.dto.RefreshRequest;
+import ru.khomyakov.authservice.models.dto.RestoreMessage;
 import ru.khomyakov.authservice.services.AuthService;
 
 @Slf4j
@@ -42,5 +43,12 @@ public class AuthController {
     @PostMapping("/register")
     public void register(@RequestBody @NotNull String email) {
         authService.register(email);
+    }
+
+    @Operation(summary = "password resore endpoint")
+    @GetMapping("/restore")
+    public ResponseEntity<RestoreMessage> startPasswordRestore(@RequestParam String email) {
+        RestoreMessage response = authService.startPasswordRestore(email);
+        return ResponseEntity.ok(response);
     }
 }

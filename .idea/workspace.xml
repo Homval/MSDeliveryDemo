@@ -4,19 +4,22 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="f1386286-41a3-4308-a036-d5228d6e96f3" name="Changes" comment="fix JwtProvider&#10;fix Lombok issue">
-      <change afterPath="$PROJECT_DIR$/AuthService/src/main/java/ru/khomyakov/authservice/services/RoleService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/AuthService/src/main/java/ru/khomyakov/authservice/services/impl/RoleServiceImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/AuthService/src/main/java/ru/khomyakov/authservice/utils/PasswordGenerator.java" afterDir="false" />
+    <list default="true" id="f1386286-41a3-4308-a036-d5228d6e96f3" name="Changes" comment="add register by Email&#10;add new user creating&#10;TODO MessageService sends email">
+      <change afterPath="$PROJECT_DIR$/AuthService/src/main/java/ru/khomyakov/authservice/models/dto/RestoreMessage.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/AuthService/src/main/java/ru/khomyakov/authservice/models/dto/RestoreTokenMessage.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/AuthService/src/main/java/ru/khomyakov/authservice/models/entities/Invite.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/AuthService/src/main/java/ru/khomyakov/authservice/models/enums/StatusType.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/AuthService/src/main/java/ru/khomyakov/authservice/repositories/InviteRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/AuthService/src/main/java/ru/khomyakov/authservice/services/InviteService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/AuthService/src/main/java/ru/khomyakov/authservice/services/impl/InviteServiceImpl.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/AuthService/src/main/java/ru/khomyakov/authservice/controllers/AuthController.java" beforeDir="false" afterPath="$PROJECT_DIR$/AuthService/src/main/java/ru/khomyakov/authservice/controllers/AuthController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/AuthService/src/main/java/ru/khomyakov/authservice/models/entities/Role.java" beforeDir="false" afterPath="$PROJECT_DIR$/AuthService/src/main/java/ru/khomyakov/authservice/models/entities/Role.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/AuthService/src/main/java/ru/khomyakov/authservice/repositories/RoleRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/AuthService/src/main/java/ru/khomyakov/authservice/repositories/RoleRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/AuthService/src/main/java/ru/khomyakov/authservice/repositories/UserRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/AuthService/src/main/java/ru/khomyakov/authservice/repositories/UserRepository.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/AuthService/src/main/java/ru/khomyakov/authservice/services/AuthService.java" beforeDir="false" afterPath="$PROJECT_DIR$/AuthService/src/main/java/ru/khomyakov/authservice/services/AuthService.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/AuthService/src/main/java/ru/khomyakov/authservice/services/UserService.java" beforeDir="false" afterPath="$PROJECT_DIR$/AuthService/src/main/java/ru/khomyakov/authservice/services/UserService.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/AuthService/src/main/java/ru/khomyakov/authservice/services/impl/AuthServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/AuthService/src/main/java/ru/khomyakov/authservice/services/impl/AuthServiceImpl.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/AuthService/src/main/java/ru/khomyakov/authservice/services/impl/UserServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/AuthService/src/main/java/ru/khomyakov/authservice/services/impl/UserServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/AuthService/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/AuthService/src/main/resources/application.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/AuthService/src/main/resources/db/changelog/version_1_0_0/create-table.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/AuthService/src/main/resources/db/changelog/version_1_0_0/create-table.yaml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -27,10 +30,10 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="Liquibase Changelog" />
-        <option value="Enum" />
-        <option value="Record" />
-        <option value="Interface" />
         <option value="Class" />
+        <option value="Enum" />
+        <option value="Interface" />
+        <option value="Record" />
       </list>
     </option>
   </component>
@@ -223,7 +226,8 @@
       <workItem from="1738594417073" duration="13223000" />
       <workItem from="1738682310402" duration="881000" />
       <workItem from="1738945189562" duration="7942000" />
-      <workItem from="1739117191038" duration="4197000" />
+      <workItem from="1739117191038" duration="6033000" />
+      <workItem from="1739463712611" duration="7548000" />
     </task>
     <task id="LOCAL-00001" summary="init commit">
       <option name="closed" value="true" />
@@ -369,7 +373,15 @@
       <option name="project" value="LOCAL" />
       <updated>1738953168788</updated>
     </task>
-    <option name="localTasksCounter" value="19" />
+    <task id="LOCAL-00019" summary="add register by Email&#10;add new user creating&#10;TODO MessageService sends email">
+      <option name="closed" value="true" />
+      <created>1739123240845</created>
+      <option name="number" value="00019" />
+      <option name="presentableId" value="LOCAL-00019" />
+      <option name="project" value="LOCAL" />
+      <updated>1739123240845</updated>
+    </task>
+    <option name="localTasksCounter" value="20" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -405,7 +417,19 @@
     <MESSAGE value="create JwtProvider&#10;create AuthController" />
     <MESSAGE value="connect Redis&#10;connect Kafka&#10;add refresh and logout controller methods" />
     <MESSAGE value="fix JwtProvider&#10;fix Lombok issue" />
-    <option name="LAST_COMMIT_MESSAGE" value="fix JwtProvider&#10;fix Lombok issue" />
+    <MESSAGE value="add register by Email&#10;add new user creating&#10;TODO MessageService sends email" />
+    <option name="LAST_COMMIT_MESSAGE" value="add register by Email&#10;add new user creating&#10;TODO MessageService sends email" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/AuthService/src/main/java/ru/khomyakov/authservice/services/impl/InviteServiceImpl.java</url>
+          <line>56</line>
+          <option name="timeStamp" value="4" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
